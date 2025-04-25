@@ -1,0 +1,12 @@
+
+<select [(ngModel)]= "chooseState" (ngModelChange)="changeState($event)">
+    <option [ngValue]="state" *ngFor="let state of states">{{state.name}}</option>
+</select>
+
+<div>
+    <canvas id="stateChart"></canvas>
+</div>
+
+<!--<select [(ngModel)]="chooseEnv" (ngModelChange)="setEnvironment($event)">
+    <option [ngValue]="environment" *ngFor="let environment of environments">{{environment.name}}</option>
+</select>-->
